@@ -143,134 +143,168 @@
   }
 }
 
+/* ==========================================
+   MOBILE RESPONSIVE (768px and below)
+========================================== */
 
-/* ===========================
-   Mobile (768px)
-=========================== */
-@media (max-width: 768px) {
+@media screen and (max-width:768px){
 
-  .about-section {
-    padding: 4rem 0;
+  .about-section{
+    padding:70px 0;
   }
 
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+  .about-grid{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
   }
 
-  .about-text {
-    gap: 1.2rem;
+  .about-text{
+    order:2;
+    width:100%;
+    text-align:center;
   }
 
-  .about-bio {
-    font-size: 0.98rem;
-    line-height: 1.8;
-    text-align: justify;
+  .about-text h3{
+    font-size:28px !important;
+    line-height:1.4;
   }
 
-  .about-objective {
-    padding: 1.2rem;
-    font-size: 0.95rem;
-    line-height: 1.7;
+  .about-bio{
+    font-size:16px;
+    line-height:1.8;
+    text-align:justify;
   }
 
-  .personal-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  .about-objective{
+    padding:18px;
+    font-size:15px;
+    line-height:1.8;
+    text-align:left;
   }
 
-  .personal-card {
-    padding: 1.3rem;
+  /* Quick Info */
+
+  .info-list{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+    margin-top:25px;
   }
 
-  .personal-card-icon {
-    width: 42px;
-    height: 42px;
+  .info-item{
+    width:100%;
+    padding:15px;
+    border-radius:14px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    text-align:left;
   }
 
-  .personal-card-val {
-    font-size: 1.6rem;
+  .info-label{
+    font-size:12px;
+    margin-bottom:6px;
   }
 
-  .personal-card-label {
-    font-size: 0.75rem;
+  .info-value{
+    font-size:15px;
+    word-break:break-word;
   }
 
-  .info-list {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  /* Stats */
+
+  .personal-cards{
+    order:1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    width:100%;
   }
 
-  .info-item {
-    padding: 0.8rem;
-    background: rgba(255,255,255,0.03);
-    border-radius: 10px;
+  .personal-card{
+    padding:22px 15px;
   }
 
-  .info-label {
-    font-size: 0.75rem;
+  .personal-card-icon{
+    width:48px;
+    height:48px;
   }
 
-  .info-value {
-    font-size: 0.95rem;
+  .personal-card-val{
+    font-size:26px;
   }
+
+  .personal-card-label{
+    font-size:13px;
+    line-height:1.5;
+  }
+
 }
 
 
-/* ===========================
-   Small Mobile (480px)
-=========================== */
-@media (max-width: 480px) {
+/* ==========================================
+   SMALL MOBILE (480px and below)
+========================================== */
 
-  .about-section {
-    padding: 3rem 0;
+@media screen and (max-width:480px){
+
+  .about-section{
+    padding:60px 0;
   }
 
-  .about-grid {
-    gap: 2rem;
+  .about-grid{
+    gap:28px;
   }
 
-  .about-bio {
-    font-size: 0.92rem;
+  .about-text h3{
+    font-size:24px !important;
   }
 
-  .about-objective {
-    padding: 1rem;
-    font-size: 0.9rem;
+  .about-bio{
+    font-size:15px;
   }
 
-  .personal-cards {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .about-objective{
+    padding:16px;
+    font-size:14px;
   }
 
-  .personal-card {
-    padding: 1.2rem;
+  .personal-cards{
+    grid-template-columns:1fr;
+    gap:18px;
   }
 
-  .personal-card-icon {
-    width: 40px;
-    height: 40px;
+  .personal-card{
+    padding:25px 20px;
   }
 
-  .personal-card-val {
-    font-size: 1.5rem;
+  .personal-card-icon{
+    width:55px;
+    height:55px;
   }
 
-  .personal-card-label {
-    font-size: 0.72rem;
+  .personal-card-val{
+    font-size:30px;
   }
 
-  .info-list {
-    grid-template-columns: 1fr;
+  .personal-card-label{
+    font-size:14px;
   }
 
-  .info-item {
-    padding: 0.9rem;
+  .info-list{
+    gap:12px;
   }
 
-  .info-value {
-    font-size: 0.9rem;
-    word-break: break-word;
+  .info-item{
+    padding:14px;
   }
+
+  .info-label{
+    font-size:11px;
+  }
+
+  .info-value{
+    font-size:15px;
+  }
+
 }

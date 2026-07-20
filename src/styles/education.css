@@ -138,109 +138,121 @@
 
 
 /* ==========================================
-   Mobile (768px)
+   MOBILE RESPONSIVE (768px & BELOW)
 ========================================== */
-@media (max-width: 768px) {
 
-  .education-section {
-    padding: 4rem 0;
+@media screen and (max-width:768px){
+
+  .education-section{
+    padding:70px 0;
   }
 
-  .timeline-container {
-    padding-left: 1.8rem;
+  .timeline-container{
+    width:100%;
+    padding-left:28px;
   }
 
-  .timeline-container::before {
-    left: 6px;
+  .timeline-container::before{
+    left:8px;
   }
 
-  .timeline-dot {
-    left: -1.8rem;
-    width: 16px;
-    height: 16px;
-    border-width: 3px;
+  .timeline-item{
+    margin-bottom:30px;
   }
 
-  .timeline-item {
-    margin-bottom: 2.5rem;
+  .timeline-dot{
+    width:16px;
+    height:16px;
+    left:-28px;
+    top:12px;
+    border-width:3px;
   }
 
-  .timeline-card {
-    padding: 1.5rem;
+  .timeline-card{
+    padding:22px;
+    border-radius:18px;
   }
 
-  .timeline-meta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
+  .timeline-meta{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
   }
 
-  .timeline-degree {
-    font-size: 1.15rem;
+  .timeline-period{
+    font-size:12px;
   }
 
-  .timeline-period {
-    font-size: 0.75rem;
+  .timeline-degree{
+    font-size:22px;
+    line-height:1.4;
   }
 
-  .timeline-institution {
-    font-size: 0.95rem;
-    flex-wrap: wrap;
+  .timeline-institution{
+    font-size:15px;
+    line-height:1.6;
+    flex-wrap:wrap;
   }
 
-  .timeline-desc {
-    font-size: 0.9rem;
-    line-height: 1.7;
+  .timeline-desc{
+    font-size:15px;
+    line-height:1.8;
+    text-align:justify;
   }
+
 }
 
 
 /* ==========================================
-   Small Mobile (480px)
+   SMALL MOBILE (480px & BELOW)
 ========================================== */
-@media (max-width: 480px) {
 
-  .education-section {
-    padding: 3rem 0;
+@media screen and (max-width:480px){
+
+  .education-section{
+    padding:60px 0;
   }
 
-  .timeline-container {
-    padding-left: 1.4rem;
+  .timeline-container{
+    padding-left:24px;
   }
 
-  .timeline-container::before {
-    left: 4px;
-    width: 2px;
+  .timeline-container::before{
+    left:6px;
   }
 
-  .timeline-dot {
-    left: -1.4rem;
-    width: 14px;
-    height: 14px;
-    border-width: 2px;
+  .timeline-dot{
+    width:14px;
+    height:14px;
+    left:-24px;
+    top:10px;
+    border-width:2px;
   }
 
-  .timeline-card {
-    padding: 1.2rem;
+  .timeline-item{
+    margin-bottom:24px;
   }
 
-  .timeline-degree {
-    font-size: 1rem;
-    line-height: 1.4;
+  .timeline-card{
+    padding:18px;
   }
 
-  .timeline-period {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.5rem;
+  .timeline-period{
+    font-size:11px;
   }
 
-  .timeline-institution {
-    font-size: 0.9rem;
-    line-height: 1.5;
+  .timeline-degree{
+    font-size:18px;
   }
 
-  .timeline-desc {
-    font-size: 0.85rem;
-    line-height: 1.6;
+  .timeline-institution{
+    font-size:14px;
   }
+
+  .timeline-desc{
+    font-size:14px;
+    line-height:1.7;
+  }
+
 }

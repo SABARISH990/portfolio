@@ -184,131 +184,155 @@
 }
 
 
-/* ===========================
-   Mobile (768px)
-=========================== */
-@media (max-width: 768px) {
+/* ==========================================
+   MOBILE RESPONSIVE (768px & BELOW)
+========================================== */
 
-  .contact-section {
-    padding: 4rem 0;
+@media screen and (max-width:768px){
+
+  .contact-section{
+    padding:70px 0;
   }
 
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+  .contact-grid{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
   }
 
-  .contact-info-col {
-    gap: 1.5rem;
+  .contact-info-col{
+    width:100%;
+    gap:20px;
   }
 
-  .contact-info-intro {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    text-align: left;
+  .contact-info-intro{
+    font-size:15px;
+    line-height:1.8;
+    text-align:center;
   }
 
-  .contact-info-card {
-    padding: 1rem;
-    gap: 1rem;
+  .contact-cards-list{
+    gap:16px;
   }
 
-  .contact-card-icon-wrap {
-    width: 45px;
-    height: 45px;
-    min-width: 45px;
-    font-size: 1rem;
+  .contact-info-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border-radius:16px;
   }
 
-  .contact-card-title {
-    font-size: 0.75rem;
+  .contact-card-icon-wrap{
+    width:50px;
+    height:50px;
+    min-width:50px;
   }
 
-  .contact-card-value {
-    font-size: 0.9rem;
-    word-break: break-word;
+  .contact-card-details{
+    flex:1;
+    overflow:hidden;
   }
 
-  .contact-form-card {
-    padding: 1.5rem;
+  .contact-card-title{
+    font-size:12px;
   }
 
-  .contact-form {
-    gap: 1.2rem;
+  .contact-card-value{
+    font-size:15px;
+    word-break:break-word;
+  }
+
+  .contact-form-card{
+    width:100%;
+    padding:22px;
+    border-radius:18px;
+  }
+
+  .contact-form{
+    gap:18px;
+  }
+
+  .form-group{
+    width:100%;
   }
 
   .form-input,
-  .form-textarea {
-    padding: 0.85rem 1rem;
-    font-size: 0.95rem;
+  .form-textarea{
+    width:100%;
+    font-size:16px;
+    padding:14px 16px;
   }
 
-  .form-textarea {
-    min-height: 130px;
+  .form-textarea{
+    min-height:150px;
   }
 
-  .contact-alert {
-    font-size: 0.9rem;
-    padding: 0.9rem 1rem;
+  .btn-primary{
+    width:100%;
+    justify-content:center;
   }
+
 }
 
 
-/* ===========================
-   Small Mobile (480px)
-=========================== */
-@media (max-width: 480px) {
+/* ==========================================
+   SMALL MOBILE (480px & BELOW)
+========================================== */
 
-  .contact-section {
-    padding: 3rem 0;
+@media screen and (max-width:480px){
+
+  .contact-section{
+    padding:60px 0;
   }
 
-  .contact-grid {
-    gap: 2rem;
+  .contact-grid{
+    gap:28px;
   }
 
-  .contact-info-card {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 1rem;
+  .contact-info-intro{
+    font-size:14px;
   }
 
-  .contact-card-icon-wrap {
-    width: 42px;
-    height: 42px;
-    font-size: 1rem;
+  .contact-info-card{
+    flex-direction:column;
+    text-align:center;
+    padding:18px;
   }
 
-  .contact-card-details {
-    align-items: center;
+  .contact-card-details{
+    text-align:center;
   }
 
-  .contact-card-title {
-    font-size: 0.72rem;
+  .contact-card-title{
+    font-size:11px;
   }
 
-  .contact-card-value {
-    font-size: 0.85rem;
-    word-break: break-word;
+  .contact-card-value{
+    font-size:14px;
   }
 
-  .contact-form-card {
-    padding: 1.2rem;
+  .contact-form-card{
+    padding:18px;
+  }
+
+  .form-label{
+    font-size:13px;
   }
 
   .form-input,
-  .form-textarea {
-    padding: 0.8rem 0.9rem;
-    font-size: 0.9rem;
+  .form-textarea{
+    padding:13px;
+    font-size:15px;
   }
 
-  .form-textarea {
-    min-height: 120px;
+  .form-textarea{
+    min-height:130px;
   }
 
-  .contact-alert {
-    font-size: 0.85rem;
-    padding: 0.8rem;
+  .contact-alert{
+    font-size:14px;
+    padding:12px;
   }
+
 }
