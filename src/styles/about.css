@@ -1,0 +1,276 @@
+.about-section {
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5rem;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-bio {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--secondary-text);
+}
+
+.about-objective {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  line-height: 1.6;
+  font-style: italic;
+  color: #f1f5f9;
+}
+
+.personal-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.personal-card {
+  padding: 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.personal-card:hover {
+  border-color: var(--card-hover-border);
+  transform: translateY(-5px);
+  box-shadow: var(--glow-shadow);
+}
+
+.personal-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(79, 70, 229, 0.1);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-card-val {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.personal-card-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* Quick Info List */
+.info-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.info-value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+/* ===========================
+   Tablet (992px)
+=========================== */
+@media (max-width: 992px) {
+  .about-section {
+    padding: 5rem 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .personal-cards {
+    order: 1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-bio {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .about-objective {
+    padding: 1.3rem;
+  }
+
+  .info-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ===========================
+   Mobile (768px)
+=========================== */
+@media (max-width: 768px) {
+
+  .about-section {
+    padding: 4rem 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-text {
+    gap: 1.2rem;
+  }
+
+  .about-bio {
+    font-size: 0.98rem;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  .about-objective {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .personal-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .personal-card {
+    padding: 1.3rem;
+  }
+
+  .personal-card-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .personal-card-val {
+    font-size: 1.6rem;
+  }
+
+  .personal-card-label {
+    font-size: 0.75rem;
+  }
+
+  .info-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .info-item {
+    padding: 0.8rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+  }
+
+  .info-label {
+    font-size: 0.75rem;
+  }
+
+  .info-value {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ===========================
+   Small Mobile (480px)
+=========================== */
+@media (max-width: 480px) {
+
+  .about-section {
+    padding: 3rem 0;
+  }
+
+  .about-grid {
+    gap: 2rem;
+  }
+
+  .about-bio {
+    font-size: 0.92rem;
+  }
+
+  .about-objective {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .personal-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .personal-card {
+    padding: 1.2rem;
+  }
+
+  .personal-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .personal-card-val {
+    font-size: 1.5rem;
+  }
+
+  .personal-card-label {
+    font-size: 0.72rem;
+  }
+
+  .info-list {
+    grid-template-columns: 1fr;
+  }
+
+  .info-item {
+    padding: 0.9rem;
+  }
+
+  .info-value {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+}

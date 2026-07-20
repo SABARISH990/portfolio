@@ -1,0 +1,246 @@
+.education-section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 2.5rem;
+  z-index: 2;
+}
+
+/* Timeline central/left line */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 8px;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary-color) 0%, var(--accent-color) 50%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Timeline glowing bullet */
+.timeline-dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  border: 3px solid var(--accent-color);
+  z-index: 3;
+  transition: var(--transition-smooth);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--accent-color);
+  box-shadow: 0 0 15px var(--accent-color);
+  transform: scale(1.2);
+}
+
+/* Timeline Glass Card content */
+.timeline-card {
+  padding: 2rem;
+}
+
+.timeline-card:hover {
+  border-color: var(--card-hover-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), var(--glow-shadow);
+  transform: translateX(5px);
+}
+
+.timeline-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  background: rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(6, 182, 212, 0.15);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.timeline-degree {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.timeline-institution {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary-text);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timeline-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--secondary-text);
+}
+/* ==========================================
+   Tablet (992px)
+========================================== */
+@media (max-width: 992px) {
+
+  .education-section {
+    padding: 5rem 0;
+  }
+
+  .timeline-container {
+    max-width: 100%;
+    padding-left: 2rem;
+  }
+
+  .timeline-item {
+    margin-bottom: 3rem;
+  }
+
+  .timeline-card {
+    padding: 1.8rem;
+  }
+
+  .timeline-degree {
+    font-size: 1.2rem;
+  }
+
+  .timeline-desc {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ==========================================
+   Mobile (768px)
+========================================== */
+@media (max-width: 768px) {
+
+  .education-section {
+    padding: 4rem 0;
+  }
+
+  .timeline-container {
+    padding-left: 1.8rem;
+  }
+
+  .timeline-container::before {
+    left: 6px;
+  }
+
+  .timeline-dot {
+    left: -1.8rem;
+    width: 16px;
+    height: 16px;
+    border-width: 3px;
+  }
+
+  .timeline-item {
+    margin-bottom: 2.5rem;
+  }
+
+  .timeline-card {
+    padding: 1.5rem;
+  }
+
+  .timeline-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .timeline-degree {
+    font-size: 1.15rem;
+  }
+
+  .timeline-period {
+    font-size: 0.75rem;
+  }
+
+  .timeline-institution {
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+  }
+
+  .timeline-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}
+
+
+/* ==========================================
+   Small Mobile (480px)
+========================================== */
+@media (max-width: 480px) {
+
+  .education-section {
+    padding: 3rem 0;
+  }
+
+  .timeline-container {
+    padding-left: 1.4rem;
+  }
+
+  .timeline-container::before {
+    left: 4px;
+    width: 2px;
+  }
+
+  .timeline-dot {
+    left: -1.4rem;
+    width: 14px;
+    height: 14px;
+    border-width: 2px;
+  }
+
+  .timeline-card {
+    padding: 1.2rem;
+  }
+
+  .timeline-degree {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .timeline-period {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .timeline-institution {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .timeline-desc {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+}
