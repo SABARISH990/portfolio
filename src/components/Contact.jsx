@@ -5,6 +5,7 @@ import {
   MessageSquare, User, CheckCircle, AlertTriangle 
 } from 'lucide-react';
 import '../styles/contact.css';
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -16,47 +17,53 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
- const handleSubmit = (e) => {
+ const handleSubmit = async (e) => {
   e.preventDefault();
 
   if (!formData.name || !formData.email || !formData.message) {
     setAlertStatus({
-      type: 'error',
-      message: 'Please fill in all form fields before submitting.'
+      type: "error",
+      message: "Please fill in all form fields before submitting.",
     });
     return;
   }
 
-  const myWhatsAppNumber = "919361209066";
+ try {
+  await emailjs.send(
+    "service_930c9yc",
+    "template_ht21mp9",
+    {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    },
+    "a-3BPpyMwsy1coUA_"
+  );
 
-  const whatsappMessage = `
-New Portfolio Contact Message 🚀
+  // Success
+  setAlertStatus({
+    type: "success",
+    message: `Thank you ${formData.name}! Your message has been sent successfully.`,
+  });
 
-Name: ${formData.name}
-Email: ${formData.email}
+  // Clear form
+  setFormData({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-Message:
-${formData.message}
-`;
-
-  const whatsappURL = `https://wa.me/${myWhatsAppNumber}?text=${encodeURIComponent(
-    whatsappMessage
-  )}`;
-
-  // Open WhatsApp
-  window.open(whatsappURL, "_blank");
+} catch (error) {
+  console.error("EmailJS Error:", error);
 
   setAlertStatus({
-    type: 'success',
-    message: `Thank you, ${formData.name}! Your message has been sent successfully.`
+    type: "error",
+    message: error.text || "Failed to send message.",
   });
 
-  setFormData({
-    name: '',
-    email: '',
-    message: ''
-  });
-};
+  console.log("Status:", error.status);
+  console.log("Text:", error.text);
+}};
 
   return (
     <section id="contact" className="contact-section">
