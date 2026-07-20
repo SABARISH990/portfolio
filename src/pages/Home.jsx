@@ -26,6 +26,7 @@ import '../styles/contact.css';
 import '../styles/footer.css';
 import '../styles/responsive.css';
 import "../styles/customCursor.css";
+import "../styles/scrollTop.css";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
