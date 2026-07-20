@@ -221,123 +221,143 @@
   }
 }
 
-
 /* ==========================================
-   Mobile (768px)
+   MOBILE RESPONSIVE PROJECTS
 ========================================== */
-@media (max-width: 768px) {
 
-  .projects-section {
-    padding: 4rem 0;
+@media (max-width:768px){
+
+  .projects-section{
+    padding:4rem 0;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+
+  .projects-grid{
+    grid-template-columns:1fr;
+    gap:1.5rem;
   }
 
-  .project-card {
-    border-radius: 16px;
+
+  .project-card{
+    width:100%;
+    border-radius:18px;
   }
 
-  .project-img-wrapper {
-    height: 220px;
+
+  .project-img-wrapper{
+    height:200px;
   }
 
-  .project-content {
-    padding: 1.4rem;
+
+  .project-img{
+    object-fit:cover;
   }
 
-  .project-title {
-    font-size: 1.2rem;
+
+  .project-content{
+    padding:1.2rem;
+    gap:0.9rem;
   }
 
-  .project-desc {
-    font-size: 0.95rem;
-    line-height: 1.6;
+
+  .project-title{
+    font-size:1.25rem;
+    line-height:1.4;
   }
 
-  .project-tags {
-    gap: 8px;
+
+  .project-desc{
+    font-size:0.92rem;
+    line-height:1.6;
   }
 
-  .project-tag {
-    padding: 5px 12px;
-    font-size: 0.72rem;
+
+  .project-tags{
+    gap:6px;
   }
 
-  .project-actions {
-    flex-direction: column;
+
+  .project-tag{
+    padding:5px 10px;
+    font-size:.7rem;
   }
 
-  .project-btn {
-    width: 100%;
-    padding: 0.9rem;
+
+  .project-actions{
+    flex-direction:row;
+    gap:10px;
+    margin-top:10px;
   }
+
+
+  .project-btn{
+
+    padding:10px 8px;
+
+    font-size:.85rem;
+
+    border-radius:10px;
+
+  }
+
 }
 
 
-/* ==========================================
-   Small Mobile (480px)
-========================================== */
-@media (max-width: 480px) {
+/* Small phones */
 
-  .projects-section {
-    padding: 3rem 0;
+@media(max-width:480px){
+
+  .projects-section{
+    padding:3rem 0;
   }
 
-  .projects-grid {
-    gap: 1.2rem;
+
+  .projects-grid{
+    gap:1rem;
   }
 
-  .project-card {
-    border-radius: 14px;
+
+  .project-card{
+    border-radius:14px;
   }
 
-  .project-img-wrapper {
-    height: 180px;
+
+  .project-img-wrapper{
+    height:170px;
   }
 
-  .project-content {
-    padding: 1.2rem;
+
+  .project-content{
+    padding:1rem;
   }
 
-  .project-title {
-    font-size: 1.1rem;
+
+  .project-title{
+    font-size:1.1rem;
   }
 
-  .project-desc {
-    font-size: 0.9rem;
+
+  .project-desc{
+    font-size:.85rem;
   }
 
-  .project-tag {
-    font-size: 0.68rem;
-    padding: 4px 10px;
+
+  .project-actions{
+
+    flex-direction:column;
+
   }
 
-  .project-btn {
-    font-size: 0.9rem;
-    padding: 0.8rem;
-  }
-}
 
+  .project-btn{
 
-/* ==========================================
-   Touch Devices
-========================================== */
-@media (hover: none) {
+    width:100%;
 
-  .project-card:hover,
-  .project-btn:hover,
-  .project-tag:hover {
-    transform: none;
+    padding:.8rem;
+
+    font-size:.85rem;
+
   }
 
-  .project-card:hover .project-img {
-    transform: scale(1);
-  }
 
-  .project-card:hover .project-content {
-    transform: none;
-  }
 }

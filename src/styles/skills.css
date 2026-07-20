@@ -113,132 +113,157 @@
   }
 
 }
-
-
 /* ==========================================
-   Tablet (992px)
+   MOBILE RESPONSIVE SKILLS
 ========================================== */
-@media (max-width: 992px) {
 
-  .skills-section {
-    padding: 5rem 0;
-  }
+@media(max-width:768px){
 
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.5rem;
-  }
+.skills-section{
+    padding:4rem 0;
+}
 
-  .skill-category-card {
-    padding: 2rem;
-  }
 
-  .skill-category-title {
-    font-size: 1.3rem;
-    margin-bottom: 1.8rem;
-  }
+.skills-grid{
+
+    grid-template-columns:1fr;
+
+    gap:1.3rem;
 
 }
 
 
-/* ==========================================
-   Mobile (768px)
-========================================== */
-@media (max-width: 768px) {
 
-  .skills-section {
-    padding: 4rem 0;
-  }
+.skill-category-card{
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
+    padding:1.4rem;
 
-  .skill-category-card {
-    padding: 1.6rem;
-  }
-
-  .skill-category-title {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .skills-list {
-    gap: 1.2rem;
-  }
-
-  .skill-name-wrap {
-    font-size: 0.9rem;
-  }
-
-  .skill-percentage {
-    font-size: 0.8rem;
-  }
-
-  .skill-bar-bg {
-    height: 5px;
-  }
+    border-radius:16px;
 
 }
 
 
-/* ==========================================
-   Small Mobile (480px)
-========================================== */
-@media (max-width: 480px) {
 
-  .skills-section {
-    padding: 3rem 0;
-  }
+.skill-category-title{
 
-  .skills-grid {
-    gap: 1.2rem;
-  }
+    font-size:1.15rem;
 
-  .skill-category-card {
-    padding: 1.2rem;
-    border-radius: 14px;
-  }
-
-  .skill-category-title {
-    font-size: 1.05rem;
-    gap: 0.5rem;
-    margin-bottom: 1.2rem;
-  }
-
-  .skills-list {
-    gap: 1rem;
-  }
-
-  .skill-name-wrap {
-    font-size: 0.85rem;
-  }
-
-  .skill-percentage {
-    font-size: 0.75rem;
-  }
-
-  .skill-icon-indicator {
-    width: 5px;
-    height: 5px;
-  }
-
-  .skill-bar-bg {
-    height: 4px;
-  }
+    margin-bottom:1.3rem;
 
 }
 
 
-/* ==========================================
-   Touch Devices
-========================================== */
-@media (hover: none) {
 
-  .skill-category-card:hover {
-    transform: none;
-    box-shadow: none;
-  }
+.skills-list{
+
+    gap:1.1rem;
+
+}
+
+
+
+.skill-info{
+
+    gap:10px;
+
+}
+
+
+
+.skill-name-wrap{
+
+    font-size:.9rem;
+
+}
+
+
+
+.skill-percentage{
+
+    font-size:.75rem;
+
+}
+
+
+
+.skill-bar-bg{
+
+    height:6px;
+
+}
+
+}
+
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+
+.skills-section{
+
+    padding:3rem 0;
+
+}
+
+
+
+.skills-grid{
+
+    gap:1rem;
+
+}
+
+
+
+.skill-category-card{
+
+    padding:1rem;
+
+    border-radius:14px;
+
+}
+
+
+
+.skill-category-title{
+
+    font-size:1rem;
+
+}
+
+
+
+.skills-list{
+
+    gap:.9rem;
+
+}
+
+
+
+.skill-name-wrap{
+
+    font-size:.82rem;
+
+}
+
+
+
+.skill-percentage{
+
+    font-size:.7rem;
+
+}
+
+
+
+.skill-bar-bg{
+
+    height:5px;
+
+}
+
 
 }
