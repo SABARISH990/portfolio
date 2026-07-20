@@ -49,7 +49,7 @@ export default function Footer() {
           <a href="mailto:sabarish5763@gmail.com" className="footer-social-btn" title="Email" id="footer-social-email">
             <Mail size={18} />
           </a>
-          <a href="https://wa.me/9361209066" target="_blank" rel="noreferrer" className="footer-social-btn" title="WhatsApp" id="footer-social-whatsapp">
+          <a href="tel:+919361209066" target="_blank" rel="noreferrer" className="footer-social-btn" title="WhatsApp" id="footer-social-whatsapp">
             <Phone size={18} />
           </a>
         </div>

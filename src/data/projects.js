@@ -28,12 +28,13 @@ export const projectsData = [
     live: "https://vcpgarlic-wholesale.vercel.app/"
   },
   {
-    id: "student-scores",
-    title: "Student Score Management",
-    description: "A multi-role academic portal enabling administrators and students to securely log, calculate, and visualize academic performance metrics. Features aggregate GPA dashboards and automated report-card generator sheets.",
+    id: "Portfolio",
+    title: "Portfolio",
+    description:"A full-stack web application for managing student records and academic performance. It enables administrators to add, update, delete, and search student details while visualizing subject-wise scores and overall performance using interactive charts.",
+  
     technologies: ["React", "JavaScript", "CSS3", "Chart.js", "Express.js"],
-    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+    image: "https://img.freepik.com/premium-photo/unveiling-brilliance-mesmerizing-ultra-hd-8k-web-portfolio-design-embodies-flawless-professionali_1015980-109947.jpg?w=1060",
     github: "https://github.com",
-    live: "https://demo.example.com"
+    live: "https://portfolio-six-silk-51.vercel.app/"
   }
 ];
