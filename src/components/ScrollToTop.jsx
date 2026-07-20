@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronUp } from "lucide-react";
 import "../styles/scrollTop.css";
@@ -9,77 +9,68 @@ export default function ScrollToTop() {
 
   useEffect(() => {
 
-    const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 400);
+    const handleScroll = () => {
+      if(window.scrollY > 200){
+        setIsVisible(true);
+      }
+      else{
+        setIsVisible(false);
+      }
     };
 
-    window.addEventListener("scroll", toggleVisibility);
+
+    window.addEventListener("scroll",handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", toggleVisibility);
+      window.removeEventListener("scroll",handleScroll);
     };
 
-  }, []);
+  },[]);
 
-
-  const scrollToTop = () => {
-
-    window.scrollTo({
-      top:0,
-      behavior:"smooth"
-    });
-
-  };
 
 
   return (
 
     <AnimatePresence>
 
-      {
-        isVisible && (
+      {isVisible && (
 
-          <motion.button
+        <motion.button
 
-            onClick={scrollToTop}
+          className="scroll-top-btn"
 
-            initial={{
-              opacity:0,
-              y:30,
-              scale:0.8
-            }}
+          onClick={() =>
+            window.scrollTo({
+              top:0,
+              behavior:"smooth"
+            })
+          }
 
-            animate={{
-              opacity:1,
-              y:0,
-              scale:1
-            }}
+          initial={{
+            opacity:0,
+            scale:0
+          }}
 
-            exit={{
-              opacity:0,
-              y:30,
-              scale:0.8
-            }}
+          animate={{
+            opacity:1,
+            scale:1
+          }}
 
-            transition={{
-              duration:0.3
-            }}
+          exit={{
+            opacity:0,
+            scale:0
+          }}
 
-            className="scroll-top-btn"
+        >
 
-            aria-label="Scroll to top"
+          <ChevronUp size={22}/>
 
-          >
+        </motion.button>
 
-            <ChevronUp size={22}/>
-
-          </motion.button>
-
-        )
-      }
-
+      )}
 
     </AnimatePresence>
 
   );
+
 }
